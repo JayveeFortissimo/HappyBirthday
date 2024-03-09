@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body{
+    background-color: rgb(31, 31, 31);
+}
+
+.Parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.Upper{
+    height: 4rem;
+    width: 20rem;
+    background-color: aqua;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 0px;
+    z-index: 2;
+}
+
+.Buttom{
+    height: 10rem;
+    width: 18rem;
+    background-color: aqua;
+    border-radius: 5px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.center{
+    height: 4rem;
+    width: 3rem;
+    background-color: rgb(248, 74, 74);
+    border: none;
+}
+
+.center1{
+    height: 10rem;
+    width: 3rem;
+    background-color: rgb(248, 74, 74);
+    border: none;
+}
+
+.Ribon{
+    height: 3rem;
+    width: 5rem;
+    background-color: rgb(248, 74, 74);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.hbd{
+    height: auto;
+    width: auto;
+    padding: 15px;
+    background-color: rgb(248, 74, 74);
+    position: absolute;
+    top: 60px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.Master{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    height: 5rem;
+}
+
+
+.Components{
+    height: 27rem;
+    width: 20rem;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 1px solid aliceblue;
+    color: rgb(13, 13, 14);
+    position: absolute;
+    border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+line-height: 2;
+padding: 0px 5px 0px 5px;
+}
+
+
+.Modal{
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    visibility: hidden;
+}
+
+button{
+    height: 2rem;
+    width: 10rem;
+    border: none;
+    background-color: rgb(31, 31, 31);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 5px;
+}
